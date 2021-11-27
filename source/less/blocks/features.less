@@ -1,0 +1,107 @@
+.features {
+    background-image: url("../../img/bg/features-bg--mobile.jpg"), url("../../img/bg/features-border.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: right bottom 21px, left bottom;
+    background-size: 280px 174px, auto;
+    padding-top: 36px;
+    padding-bottom: 165px;
+}
+
+.features__heading {
+    padding: 0 18px;
+}
+
+.features__col-wrapper {
+    display: flex;
+    padding: 0 10px 37px;
+}
+
+.features__col {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+.features__col-intro {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.features__col-counter {
+    font-size: 36px;
+    line-height: 32px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.features__post {
+    padding-top: 25px;
+    padding-bottom: 19px;
+}
+
+@media (min-resolution: 192dpi) {
+    .features {
+        background-image: url("../../img/bg/features-bg--mobile@2x.jpg");
+    }
+}
+
+@media (min-width: 580px) {
+    .features {
+        background-image: url('../../img/bg/features-bg--mobile@2x.jpg');
+        background-size: 560px 348px;
+    }
+
+    .features__desktop-col-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 65px;
+        padding: 0 15px;
+    }
+}
+
+@media (min-resolution) and (min-width: 580px) {
+    .features {
+        background-image: url('../../img/bg/features-bg--tablet@2x.jpg');
+    }
+}
+
+@media (min-width: 1340px) {
+    .features {
+        background-image: url("../../img/bg/features-bg--desktop.jpg"), url("../../img/bg/features-border--desktop.png");
+        background-size: 920px 570px, auto;
+        background-position: right bottom 55px,left bottom;
+        padding-top: 41px;
+        padding-bottom: 90px;
+        min-height: 870px;
+        box-sizing: border-box;
+    }
+
+    .features__heading {
+        padding: 0 59px;
+    }
+
+    .features__col-wrapper {
+        padding: 0 40px;
+        margin-bottom: 76px;
+    }
+
+    .features__col {
+        padding: 0 20px;
+    }
+
+    .features__col-counter {
+        font-size: 48px;
+        line-height: 42px;
+    }
+
+    .features__post {
+        max-width: 470px;
+        padding: 62px 40px 52px 60px;
+    }
+}
+
+@media (min-resolution: 192dpi) and (min-width: 1340px) {
+    .features {
+        background-image: url("../../img/bg/features-bg--desktop@2x.jpg");
+    }   
+}

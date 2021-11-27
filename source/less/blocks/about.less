@@ -1,0 +1,44 @@
+.about {
+    padding-top: 134px;
+    background-image: url("../../img/bg/about-bg--mobile.jpg"), url("../../img/bg/vertical-border.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: right top, left 10px top;
+    background-size: 280px 174px, auto 100%;
+}
+
+@media (min-resolution: 192dpi) {
+    .about {
+        background-image: url("../../img/bg/about-bg--mobile@2x.jpg"), url("../../img/bg/vertical-border--desktop.png");
+    }
+}
+
+@media (min-width: 580px) {
+    .about {
+        background-image: url(../../img/bg/about-bg--mobile@2x.jpg), url("../../img/bg/vertical-border--desktop.png");
+        background-size: 560px 380px, auto 100%;
+    }
+}
+
+@media (min-resolution: 192dpi) and (min-width: 580px) {
+    .about {
+        background-image: url(../../img/bg/about-bg--tablet@2x.jpg), url("../../img/bg/vertical-border--desktop.png");
+    }
+}
+
+@media (min-width: 1340px) {
+    .about {
+        padding-top: 65px;
+        padding-bottom: 128px;
+        background-image: url("../../img/bg/about-bg--desktop.jpg"), url("../../img/bg/vertical-border--desktop.png");
+        background-size: 920px 570px, auto;
+        background-position: right top,left 298px top;
+        min-height: 630px;
+        box-sizing: border-box;
+    }
+}
+
+@media (min-width: 1340px) and (min-resolution: 192dpi) {
+    .about {
+        background-image: url("../../img/bg/about-bg--desktop@2x.jpg"), url("../../img/bg/vertical-border--desktop.png");
+    }
+}

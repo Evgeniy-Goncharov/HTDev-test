@@ -1,0 +1,111 @@
+.conditions {
+    padding-top: 54px;
+    padding-bottom: 56px;
+    background-image: url("../../img/bg/conditions-border.png");
+    background-repeat: no-repeat;
+    background-position: left top 33px;
+}
+
+.conditions__heading {
+    padding: 0 30px;
+    margin-bottom: 27px;
+}
+
+.conditions__grid {
+    display: grid;
+    grid-template-rows: min-content 45px min-content;
+}
+
+.conditions__swiper {
+    margin-left: 0;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    width: 280px;
+    z-index: 1;
+}
+
+.conditions__swiper-pagination {
+    bottom: 55px;
+    left: 0;
+    right: 0;
+}
+
+.conditions__swiper-button-next {
+    bottom: 110px;
+    right: auto;
+    left: 60px;
+    top: auto;
+}
+
+.conditions__grid-content {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    position: relative;
+    z-index: 2;
+}
+
+.conditions__swiper-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.conditions__post {
+    margin-left: auto;
+    padding-top: 30px;
+    padding-bottom: 22px;
+}
+
+@media (min-width: 580px) {
+    .conditions__swiper {
+        width: 560px;
+    }
+}
+
+@media (min-width: 1340px) {
+    .conditions {
+        padding-top: 42px;
+        padding-bottom: 0;
+        background-image: url("../../img/bg/conditions-border--desktop.png");
+        background-position: left top;
+    }
+
+    .conditions__heading {
+        max-width: 890px;
+        margin-left: auto;
+    }
+
+    .conditions__grid {
+        grid-template-columns: min-content 20px 1fr;
+        grid-template-rows: min-content;
+        padding-top: 25px;
+    }
+
+    .conditions__swiper {
+        width: 800px;
+        min-height: 916px;
+        box-sizing: border-box;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        padding-top: 50px;
+    }
+
+    .conditions__grid-content {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        padding-top: 0;
+
+        .conditions__post {
+            margin: 0;
+            padding: 44px 60px 50px 50px;
+        }
+    }
+}
